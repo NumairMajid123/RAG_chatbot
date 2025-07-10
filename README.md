@@ -9,7 +9,7 @@ Step 2: Embedding Generation and Storage
 Once the data is scraped and saved in JSON format, another script processes this file to generate vector embeddings. These embeddings represent the semantic meaning of each document or section. The embeddings are then stored in a FAISS vector store, which allows for fast and efficient similarity searches later on.
 
 Step 3: Retrieval-Augmented Generation (RAG)
-The stored FAISS index is used to perform vector-based retrieval. When a user asks a question, the system searches through the vector database to find the most relevant chunks of content. These chunks are retrieved and provided as context to a language model, which then generates an accurate and context-aware answer. This is the core concept behind Retrieval-Augmented Generation.
+When a user submits a query, the system converts that query into an embedding using the same embedding model. It then performs a similarity search in the FAISS vector store to retrieve the most relevant pieces of content from the Confluence data. The top-matching results are returned directly to the user.
 
 Tools and Libraries Used
 BeautifulSoup for HTML parsing and scraping Confluence content
