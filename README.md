@@ -23,3 +23,5 @@ FAISS (Facebook AI Similarity Search) to store and search vector embeddings
 
 Summary
 This project creates an intelligent chatbot that leverages both document retrieval and generative AI to provide accurate answers based on a custom knowledge base. By combining scraping, embeddings, and vector search, it enables efficient and scalable access to internal documentation like Confluence pages.
+
+demo link: https://drive.google.com/file/d/1WKdbjQW1jklUIdTxacQONMjOep-c59Yg/view
